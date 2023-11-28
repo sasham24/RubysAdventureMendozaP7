@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
 
+    bool broken;
+
     float timer;
     int direction = 1;
 
@@ -27,6 +29,10 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
         timer -= Time.deltaTime;
         if (timer < 0)
         {
@@ -36,6 +42,10 @@ public class EnemyController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (!broken)
+        {
+            return;
+        }
         Vector2 position = rigidbody2d.position;
         if(vertical)
         {
@@ -61,4 +71,10 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+
+    public void Fix ()
+    {
+        broken = false;
+        rigidbody2d.simulated = false;
+    }
 }
