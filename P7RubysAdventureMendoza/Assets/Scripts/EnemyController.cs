@@ -9,9 +9,7 @@ public class EnemyController : MonoBehaviour
     public float changeTime = 3.0f;
 
     Rigidbody2D rigidbody2d;
-
     bool broken;
-
     float timer;
     int direction = 1;
 
@@ -33,7 +31,9 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
+        
         timer -= Time.deltaTime;
+        
         if (timer < 0)
         {
             direction = -direction;
@@ -46,7 +46,9 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
+       
         Vector2 position = rigidbody2d.position;
+        
         if(vertical)
         {
             animator.SetFloat("Move X", 0);
@@ -76,5 +78,6 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2d.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
