@@ -437,6 +437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1258874683}
+  - {fileID: 1714722878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &313936621 stripped
@@ -32541,19 +32542,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2002927176}
+    m_TransformParent: {fileID: 312213125}
     m_Modifications:
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.1008153
+      value: 5.5707064
       objectReference: {fileID: 0}
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4977223
+      value: -0.028672814
       objectReference: {fileID: 0}
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.19535111
       objectReference: {fileID: 0}
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32582,6 +32583,10 @@ PrefabInstance:
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838045666165428717, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6670080743035946035, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_Name
@@ -32992,7 +32997,6 @@ Transform:
   - {fileID: 1816920317}
   - {fileID: 560903564}
   - {fileID: 313936621}
-  - {fileID: 1714722878}
   - {fileID: 35365089}
   - {fileID: 2113172902}
   - {fileID: 379195669}
@@ -33304,6 +33308,10 @@ PrefabInstance:
     - target: {fileID: 3511635372674619587, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838045666165428717, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6670080743035946035, guid: 98246f7dcec6f48408ff61719118a0f8, type: 3}
       propertyPath: m_Name
